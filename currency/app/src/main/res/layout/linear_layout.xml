@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Số tiền nguồn (EditText) -->
+    <EditText
+        android:id="@+id/sourceAmount"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:text="85.00"
+        android:backgroundTint="@color/purple_200"
+        android:textSize="48sp"
+        android:textColor="#000000"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:maxLines="1" />
+
+    <!-- Loại tiền tệ nguồn (Spinner) -->
+    <Spinner
+        android:id="@+id/sourceCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/currency_array"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Số tiền đích (TextView) -->
+    <TextView
+        android:id="@+id/targetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="78.52"
+        android:textSize="48sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:maxLines="1" />
+
+    <!-- Loại tiền tệ đích (Spinner) -->
+    <Spinner
+        android:id="@+id/targetCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/currency_array"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Tỷ giá -->
+    <TextView
+        android:id="@+id/exchangeRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="1 USD = 0.9238 EUR"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/lastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Updated 10/25/2024 12:30 AM"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Nút cập nhật tỷ giá -->
+    <Button
+        android:id="@+id/updateRatesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Update rates"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
