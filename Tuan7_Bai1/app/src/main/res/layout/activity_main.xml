@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- MSSV -->
+    <EditText
+        android:id="@+id/etMSSV"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="MSSV"
+        android:inputType="text" />
+
+    <!-- Họ tên -->
+    <EditText
+        android:id="@+id/etHoTen"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Họ tên"
+        android:inputType="textPersonName" />
+
+    <!-- Giới tính -->
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Nam" />
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Số điện thoại -->
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Số điện thoại"
+        android:inputType="phone" />
+
+    <!-- Ngày sinh -->
+    <Button
+        android:id="@+id/btnShowCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn Ngày sinh" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh đã chọn: " />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Địa chỉ hiện tại -->
+    <Spinner
+        android:id="@+id/spinnerWard"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:prompt="Chọn Phường/Xã" />
+
+    <Spinner
+        android:id="@+id/spinnerDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:prompt="Chọn Quận/Huyện" />
+
+    <Spinner
+        android:id="@+id/spinnerProvince"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:prompt="Chọn Tỉnh/Thành phố" />
+
+    <!-- Sở thích -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sở thích:" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSports"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Thể thao" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCinema"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Điện ảnh" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMusic"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="Âm nhạc" />
+
+    <!-- Điều khoản và Submit -->
+    <CheckBox
+        android:id="@+id/checkBoxTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Đồng ý với các điều khoản" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>
